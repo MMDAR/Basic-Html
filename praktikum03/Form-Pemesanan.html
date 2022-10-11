@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1><p>PIZZA HOT | Pizza-on-Debt</p></h1>
+    <p>Our 12" wood-fired pizza are avalailable for delivery.Build your custom pizza and we'll deliver it within an hour.</p><hr>
+    <form>
+        <table>
+            <thead><tr>
+                <th colspan="2">Your information</th>
+            </tr></thead>
+            <tbody>
+                <tr>
+                    <td><label for="Name">Name</label></td>
+                    <td>: <Input type="text" id="Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="Address">Address</label></td>
+                    <td>: <Input type="text" id="Address"></td>
+                </tr>
+                <tr>
+                    <td><label for="TelNumb">TelNumb</label></td>
+                    <td>: <Input type="number" id="TelNumb"></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Email</label></td>
+                    <td>: <Input type="email" id="Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="Deskripsi">Delivery Info</label></td>
+                    <td>: <textarea type="text" id="Deskripsi"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <fieldset>
+            <legend><b>Design Your Dream Pizza</b></legend>
+            Pizza Specs
+            
+                <h4>Crust (Choose One)</h4>
+                <ul style="list-style: none">
+                <li>
+                    <input type="radio" id="CW" name="crust">
+                    <label for="CW">Classic White</label>
+                </li>
+                <li>
+                    <input type="radio" id="MG" name="crust">
+                    <label for="MG">MultiGrain</label>
+                </li>
+                <li>
+                    <input type="radio" id="CSC" name="crust">
+                    <label for="CSC">Cheesed-Stuffed-Crust</label>
+                </li>
+                <li>
+                    <input type="radio" id="GF" name="crust">
+                    <label for="GF">Glutten-free</label>
+                </li>
+                </ul >
+                <h4>Topping: (Choose as many as u want)</h4>
+                <ul style="list-style: none">
+                <li>
+                    <input type="checkbox" id="RS">
+                    <label for="RS">Red Sauce</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="WS">
+                    <label for="WS">White Sauce</label>
+                </li>
+         
+                    <input type="checkbox" id="PP">
+                    <label for="PP">Pepperoni</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="MC">
+                    <label for="MC">Mozarella Cheese</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="MS">
+                    <label for="MS">Mushroom</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="PPr">
+                    <label for="PPr">Pepperoni</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="Anch">
+                    <label for="Anch">Anchovies</label>
+                </li>
+                </ul>
+                <h4>Number</h4>
+                <label for="count">How many</label>
+                <input type="number" max="6" placeholder="Max 6 Pizza's" id="count"><br>
+                <button type="submit">Bring me a Pizza</button>
+                    <br><br>
+                <button type="reset" value="Reset">Reset</button>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
