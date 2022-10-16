@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body style="max-width: 1000px; border: 1px solid black; margin: auto; margin-top: 5%;">
+    <header style="background-color: rgb(177, 177, 177);">
+    <div>
+    <table style="border-collapse: collapse; border-top: 2px solid black; border-left: 2px solid;
+    border-bottom: 2px solid black; border-right: 2px solid black; margin-left: auto; margin-right: auto; background-color: rgb(217, 219, 219);">
+        <tr style="text-align:left">
+            <td style="padding-right: 50px;">Home |</td>
+            <td style="padding-right: 50px;">Generate Link |</td>
+            <td style="padding-right: 50px;">Transaction History |</td>
+            <td style="padding-right: 50px;">Policy |</td>
+            <td style="padding-right: 50px;">Logout |</td>
+        </tr>
+    </table>
+    </div>
+    <form>
+        <div style="display: flex;padding-top: 50px;">
+        <img src="pict\macbook.png" style="flex-shrink: 0; width: 40%;" >
+        <table>
+            <tr>
+                <td><label for="Title">Title Here :</label></td>
+                <td style="padding-left: 50px;"><input type="text" style="width: 50%" id="Title" value="Macbook Air £800"></td>
+            </tr>
+            <tr>
+                <td><label for="Desc">Description :</label></td>
+                <td style="padding-left: 50px"><textarea rows="4" maxlength="50" id="Desc" style="width: 50%">
+Year: 2009
+Model:
+Condition: Mint
+                </textarea></td>
+            </tr>
+            <tr>
+            <td><label for="AN">Account Number :</label></td>
+            <td style="padding-left: 50px"><input type="number" style="width:50%" id="AN" value="17701342069"></td>
+            </tr>
+            <tr>
+                <td><label for="Bank">Bank :</label></td>
+                <td style="padding-left: 50px"><label for="Bank"></label>
+                    <select id="Bank" id="Bank" name="Bank">
+                      <option value="Bring">BRI</option>
+                      <option value="BNI">BNI</option>
+                      <option value="BSI">BSI</option>
+                      <option value="BPI">BPI</option>
+                    </select>
+                    </td>
+            </tr>
+            <tr>
+                <td><label for="AcH">Account Holder :</td>
+                <td style="padding-left: 50px"><input type="text" style="width:50%" id="AcH" value="Bukan saya"></td>
+            </tr>
+            <tr>
+                <td><label for="Tr">Transaction :</td>
+                <td style="padding-left: 50px"><input type="number" min="1" max="3" id="Tr" style="width: 30px" value="1">
+                <p style="font-size: 10pt; color: blue;">* if the transaction is for 3 person, choose 3 from the drop down list</p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="padding-left: 50px; color: green;">
+                <input type="checkbox" style="accent-color: green;" checked> Send to Mobile Phone</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="padding-left: 50px; color: green">
+                <input type="checkbox" style="accent-color: green; " checked> Send to Email</td>
+            </tr>
+            <tr>
+                <td><label for="MB">Send to Mobile Phone :</label></td>
+                <td style="padding-left: 50px"><input type="number" style="width: 50%" id="MB" value="6287654321"></td>
+            </tr>
+            <tr>
+                <td><label for="EM">Send to Email :</td>
+                <td style="padding-left: 50px"><input type="text" style="width: 50%" id="EM" value="example@bruh.com"></td>
+            </tr>
+        </table>
+        </div>
+        <br>
+        <button style="margin-left:10px; background-color: green;" type="button">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: white">Upload Image</a></button>
+        <table style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td>
+                    <button type="button" onclick="Form-Checkout.html" style="background-color: green;">
+                    <a href="Form-Checkout.html" style="color: white">Generate Nobar Link</a></button>
+                </td>
+            </tr>
+            </table>
+    </form>
+    </header>
+</body>
+</html>

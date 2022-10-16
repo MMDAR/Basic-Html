@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Checkout</title>
+</head>
+<body style="max-width: 1000px; border: 1px solid black; margin: auto; margin-top: 5%;">
+    <header style="background-color: rgb(177, 177, 177);">
+    <div>
+    <table style="border-collapse: collapse; border-top: 2px solid black; border-left: 2px solid black;
+    border-bottom: 2px solid black; border-right: 2px solid black; margin-left: auto; margin-right: auto; background-color: rgb(217, 219, 219);">
+        <tr style="text-align:left">
+            <td style="padding-right: 50px;">Home |</td>
+            <td style="padding-right: 50px;">Generate Link |</td>
+            <td style="padding-right: 50px;">Transaction History |</td>
+            <td style="padding-right: 50px;">Policy |</td>
+            <td style="padding-right: 50px;">Logout |</td>
+        </tr>
+    </table>
+    </div>
+    <form>
+        <div style="display: flex;padding-top: 50px;">
+        <img src="pict\macbook.png" style="flex-shrink: 0; width: 40%;" >
+        <table>
+            <tr>
+                <td>Title Here :</td>
+                <td style="padding-left: 50px;">Macbook Air £800</td>
+            </tr>
+            <tr>
+                <td>Description :</td>
+                <td style="padding-left: 50px"><p>
+                Year: 2009<br>
+                Model:<br>
+                Condition: Mint<br>
+                </p></td>
+            </tr>
+            <tr>
+            <td>Total Amount :</td>
+            <td style="padding-left: 50px">£800</td>
+            </tr>
+            <tr>
+                <td>Payment Type :</td>
+                <td style="padding-left: 50px"><label for="Payment"></label>
+                    <select id="Bank" name="Bank">
+                      <option value="Bring">Visa Debit</option>
+                      <option value="BNI">Paypal</option>
+                      <option value="BSI">Mobile Banking</option>
+                      <option value="BPI">PayLater</option>
+                    </select>
+                    </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>Account Holder :</td>
+                <td style="padding-left: 50px">Bukan Saya</td>
+            </tr>
+            <tr>
+                <td>Transaction :</td>
+                <td style="padding-left: 50px">3
+            </tr>
+            <tr>
+                <td></td>
+                <td style="padding-left: 50px; color: green;">
+                <input type="checkbox" style="accent-color: green" checked> Send to Mobile Phone</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="padding-left: 50px; color: green;">
+                <input type="checkbox" style="accent-color: green" checked> Send to Email</td>
+            </tr>
+            <tr>
+                <td>Send to Mobile Phone :</td>
+                <td style="padding-left: 50px"><input type="number" style="width: 80%" value="6287654321"></td>
+            </tr>
+            <tr>
+                <td>Send to Email :</td>
+                <td style="padding-left: 50px"><input type="text" style="width: 80%" value="example@bruh.com"></td>
+            </tr>
+        </table>
+        </div>
+        <br>
+        <button style="margin-left:10px; background-color: green; color: white;" type="button">Upload Image</button>
+        <table style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td>
+                    <button type="submit" style="background-color: green; color: white;">Pay using QuidLink</button>
+                </td>
+            </tr>
+            </table>
+    </form>
+</body>
+</html>
