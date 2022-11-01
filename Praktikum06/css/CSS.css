@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: lightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+img {
+    width: 20%;
+}
+p {
+text-align: justify;
+}
+.center {
+    display: block;
+    margin: auto;
+}
+.foto {
+    background-color: black;
+}
+.cod p {
+background-color: aqua;
+text-align: center;
+border: 5px solid black;
+font-weight: bold;
+color: blue;
+}
+.promo {
+    text-align: center;
+}
+.promo #Harga {
+    text-decoration: line-through;
+
+}
+.btn {
+    text-align: center;
+}
+.btn #tombol {
+    background-color: green;
+    color: white;
+    
+}
