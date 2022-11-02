@@ -1,40 +1,100 @@
 * {
-    background-color: antiquewhite;
+    background-color: white;
     font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+}
+/*header*/
+li {
+    margin: 0 20px;
 }
 .atas {
     color: black;
     text-align: center;
-    background-color: bisque;
+    background-color: rgb(89, 184, 242);
+    padding-bottom: 50px;
 }
-.atas h1 {
-    color: blue;
-    background-color: inherit;
-}
-.atas p {
-    display: inline-block;
-    background-color:blanchedalmond;
-}
-.atas #pakkarno {
+#pakkarno {
     font-style: oblique;
-    background-color: inherit;
 }
+/*anchor*/
 .link {
-text-align:center;
-padding: 50px;
+    background-color: rgb(173, 221, 251);
+    text-align:center;
+    padding: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 .link a {
-    padding: 50px 25px;
+    padding: 20px 40px;
     text-decoration: none;
     color: black;
+    font-size: larger;
 }
 .link a:hover {
-    background-color: rgb(141, 89, 21);
+    background-color: azure;
+    color: black;
+}
+.link a:active{
+    color:red;
+    }
+/*banner*/
+.banner {
+    height: 60vh;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner p {
+    z-index: 1;
+    border: 3px solid #fff;
+    padding: 20px 25px;
     color: white;
+    font-size: larger;
+    width: 60%;
+}
+.banner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(62, 91, 105, 0.6);
+}
+/*content*/
+section {
+    padding: 50px 0;
 }
 .gambaratas {
-text-align: center;
+padding: 50px 0;
+display: flex;
+justify-content: center;
 }
+.gambaratas img {
+    padding: 0 10px;
+    width: 20%;
+}
+h2 {
+    text-align: center;
+    color: rgb(173, 221, 251);
+}
+h2::before {
+    content: '';
+    display: block;
+    height:      75px;
+    margin-top: -75px;
+    visibility: hidden;
+  }
+
 #Big {
     font-weight: bold;
     font-size: x-large;
@@ -45,13 +105,31 @@ text-align: center;
 }
 .pictbawah {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .pictbawah img {
     width: 20%;
+    padding: 50px 10px;
 }
 .promo {
     font-weight: bold;
+    padding: 50px 0;
+}
+.Harga {
+text-align: center;
+background-color: rgb(173, 221, 251);
+}
+.Harga li {
+    display:inline; 
 }
 #harga {
     text-decoration: line-through ;
+}
+/*footer*/
+.footer {
+    padding: 30px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
 }
