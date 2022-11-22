@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+}
+img {
+    width: 30%;
+}
+body {
+    background-color: pink;
+}
+header, footer {
+    height: 10vh;
+    margin: 20px;
+    background-color: aqua;
+    line-height: 10vh;
+    align-items: center;
+    text-align: center;
+}
+main {
+    margin: 0 20px;
+    height: 70vh;
+    display: flex;
+}
+aside {
+    background-color: aquamarine;
+    flex: 1;
+    margin-right: 20px;
+    line-height: 70vh;
+    text-align: center;
+    align-items: center;
+
+}
+article {
+    background-color: red;
+    flex: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+article .text {
+    height: 30vh;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}

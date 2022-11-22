@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    font-family: monospace;
+}
+nav  {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+nav img {
+    width: 5%;
+}
+nav ul {
+    font-size: larger;
+    display: flex;
+    list-style-type: none;
+}
+nav li {
+    padding: 20px;
+}
+nav ul :hover {
+    color: aliceblue;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
