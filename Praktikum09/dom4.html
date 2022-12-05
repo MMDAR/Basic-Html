@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+        body {
+            border: 1px solid black;
+            max-width: 30%;
+            padding: 10px;
+            text-align: center;
+            margin: 50px  auto;
+            background-color: inherit;
+        }
+        #hasil {
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 168px;
+            height: 20px;
+            cursor: text;
+        }
+        input {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form name="calculate">
+        <h1>Mamad's Calculator</h1>
+        <input type="number" id="angka01">
+        <h2>+</h2>
+        <input type="number" id="angka02" onchange="kalkulator()">
+        <br>
+        <h2>=</h2>
+        <div id="hasil" onchange="kalkulator()"></div>
+    </form>
+    <script>
+        function kalkulator(){
+            let angka1 = document.getElementById("angka01").value;
+            let angka2 = document.getElementById("angka02").value;
+            let total = parseInt(angka1)+parseInt(angka2);
+
+            document.getElementById("hasil").innerHTML = total;
+        }
+    </script>
+    
+</body>
+</html>
