@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi</title>
+    <link rel="stylesheet" href="./css/style5.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="login.html">Nomor 1</a></li>
+                <li><a href="kurs-rupiah.html">Nomor 2</a></li>
+                <li><a href="">Nomor 3</a></li>
+                <li><a href="">Nomor 4</a></li>
+                <li><a href="">Nomor 5</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+            <label for="nama">Nama Pelanggan</label>
+            <input type="text" id="pelanggan" placeholder="Nama Anda">
+            <label for="email">Email Anda</label>
+            <input type="text" id="email" placeholder="example@bruh.com">
+            <label for="jam">Jam Keberangkatan</label>
+            <input type="number" id="jam" placeholder="00:00-23:59">
+            <label for="tujuan">Tujuan keberangkatan</label>
+            <select name="dest" id="tujuan">
+                <option value="">Pilih tujuan</option>
+                <option value="jakarta">Jakarta</option>
+                <option value="bogor">Bogor</option>
+                <option value="depok">Depok</option>
+                <option value="tangerang">Tangerang</option>
+                <option value="bekasi">Bekasi</option>
+            </select>
+            <label for="jumlah">Jumlah Tiket</label>
+            <input type="number" id="jumlah" placeholder="max 4 tiket">
+            <button type="submit" onclick="return(submit())">Submit</button>
+    </div>
+
+    <script>
+        function submit() {
+            let pelanggan = document.getElementById("pelanggan").value;
+            let email = document.getElementById("email").value;
+            let jam = document.getElementById("jam").value;
+            let jumlah = document.getElementById("jumlah").value;
+            let tujuan = document.getElementById("tujuan").value;
+            var emailValid = /^([a-zA-Z0-9\._]+)@([a-a-a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+            var emailValid = /^((?!\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$))/;
+
+            if (
+                document.getElementById("pelanggan").value == "" ){
+                alert ("Masukkan nama anda");
+                Document.getElementById("pelanggan").focus();
+                return false;
+            } 
+            else if (
+                document.getElementById("email").value = ""|| document.getElementById("email").value.match(emailValid)) {
+                alert ("Pastikan Email sudah benar");
+                document.getElementById("email").focus();
+                return false;
+            }
+            else if(  
+                document.getElementById("jam").value == "" ||document.getElementById("jam").value > 2359 ||document.getElementById("jam").value < 4 || isNaN( document.getElementById("jam").value )) {          
+                alert("Pastikan jam sudah benar");
+                document.getElementById("jam").focus();
+                return false;
+            }
+            else if(
+                document.getElementById("tujuan").value == "") {
+                alert("Pastikan tujuan sudah benar");
+                document.getElementById("tujuan").focus();
+                return false
+             }
+            
+            else if (
+                document.getElementById("jumlah").value == "" || document.getElementById("jumlah").value >= 3|| document.getElementById("jumlah")<0) {
+                alert("Pastikan jumlah sudah benar");
+                document.getElementById("jumlah").focus();
+                return false;
+            }
+            else {
+                alert("terima kasih");
+                return false;
+            }
+            
+            
+                
+        }
+        console.log
+    </script>
+</body>
+</html>

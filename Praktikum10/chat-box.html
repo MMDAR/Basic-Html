@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="login.html">Nomor 1</a></li>
+                <li><a href="kurs-rupiah.html">Nomor 2</a></li>
+                <li><a href="chat-box.html">Nomor 3</a></li>
+                <li><a href="image-picker.html">Nomor 4</a></li>
+            </ul>
+        </div>
+    </nav>
+<form id="form" onsubmit="return chat()">
+    <fieldset id="container">
+        <div id="box"></div>
+        <input type="text" id="pesan">
+        <button type="button" onclick="chat()">Send</button>
+    </fieldset>
+</form>
+    
+    <script>
+        let pesan = document.getElementById("pesan")
+        let box = document.getElementById("box")
+
+        function chat () {
+            box.innerHTML +="Anda: " + pesan.value + "<br>";
+            scroll("box");
+        }
+
+        function scroll(id) {
+            let div = document.getElementById(id);
+            div.scrollTop = div.scrollHeight - div.clientHeight;
+        }
+    </script>
+</body>
+</html>

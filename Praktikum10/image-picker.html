@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <link rel="stylesheet" href="/css/style4.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="login.html">Nomor 1</a></li>
+                <li><a href="kurs-rupiah.html">Nomor 2</a></li>
+                <li><a href="image-picker.html">Nomor 4</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <select id="pilihan" onchange="cetakgambar ()">
+        <option value="">---Pilih---</option>
+        <option value="bison">Bison</option>
+        <option value="gajah">Gajah</option>
+        <option value="gorilla">Gorilla</option>
+        <option value="macan">Macan</option>
+        <option value="singa">Singa</option>
+    </select>
+    <img id="image">
+
+    <script>
+        function cetakgambar (){
+            let dropdown = document.getElementById("pilihan").value;
+            let gambar = document.getElementById("image");
+
+            if (dropdown == "bison") {
+                alert("ini gambar bison");
+                gambar.setAttribute("src", "img/bison.jpg");
+            } else if (dropdown == "gajah") {
+                alert("ini gambar Gajah");
+                gambar.setAttribute("src", "img/gajah.jpg")
+            } else if (dropdown == "gorilla") {
+                alert("ini gambar Gorilla");
+                gambar.setAttribute("src", "img/gorila.jpg")
+            } else if (dropdown == "macan") {
+                alert("ini gambar Macan");
+                gambar.setAttribute("src", "img/macan.jpg")
+            } else if (dropdown == "singa") {
+                alert("ini gambar Singa");
+                gambar.setAttribute("src", "img/singa.jpg")
+            } else {
+                alert("Gaada pilihannya bre")
+            }
+        }
+        
+    </script>
+</body>
+</html>
